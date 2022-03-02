@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class Metal : ModuleRules
+public class MetalInMotion : ModuleRules
 {
-	public Metal(ReadOnlyTargetRules Target) : base(Target)
+	public MetalInMotion(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	

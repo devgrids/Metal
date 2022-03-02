@@ -9,9 +9,13 @@ ABallBearing::ABallBearing()
 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	this->m_ballMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Ballmesh"));
-	this->m_ballMesh->SetSimulatePhysics(true);
-	SetRootComponent(m_ballMesh);
+	// Create the ball mesh, turn on its physics and set it as the root component.
+
+	BallMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("BallMesh"));
+
+	BallMesh->SetSimulatePhysics(true);
+
+	SetRootComponent(BallMesh);
 }
 
 // Called when the game starts or when spawned

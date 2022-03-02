@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "MetalGameModeBase.generated.h"
+#include "MetalInMotionGameModeBase.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class METAL_API AMetalGameModeBase : public AGameModeBase
+class METALINMOTION_API AMetalInMotionGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	

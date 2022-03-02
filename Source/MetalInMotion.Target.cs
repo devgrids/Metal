@@ -3,12 +3,12 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class MetalTarget : TargetRules
+public class MetalInMotionTarget : TargetRules
 {
-	public MetalTarget( TargetInfo Target) : base(Target)
+	public MetalInMotionTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "Metal" } );
+		ExtraModuleNames.AddRange( new string[] { "MetalInMotion" } );
 	}
 }
